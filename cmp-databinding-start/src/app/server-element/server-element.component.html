@@ -1,0 +1,15 @@
+<!-- remove the loop : *ngFor="let element of serverElements
+-->
+<!-- we want to manage the array of service elements in the app component, 
+w need to somehow manipullate from the cockpai and then replicate it in the app component to create multiple 
+instances of this server element component, whic is only a single server -->
+<div class="panel panel-default">
+        <div class="panel-heading" #heading>{{ element.name }}</div>
+        <div class="panel-body">
+          <!-- <p>
+            <strong *ngIf="element.type === 'server'" style="color: red">{{ element.content }}</strong>
+            <em *ngIf="element.type === 'blueprint'">{{ element.content }}</em>
+          </p> -->
+          <ng-content></ng-content>
+        </div>
+</div>
